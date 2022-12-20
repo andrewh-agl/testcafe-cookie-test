@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DemoCookie</title>
+  </head>
+  <body>
+    <button id="set-cookie">set-cookie</button><button id="clear-cookie">clear-cookie</button>
+    <script>
+      document.getElementById("set-cookie").addEventListener("click", function () {
+        // note: expires is future dated
+        document.cookie = "MY_COOKIE=Hello; path=/; expires=Wed, 21 Oct 2023 07:28:00 GMT";
+      });
+
+      document.getElementById("clear-cookie").addEventListener("click", function () {
+        // note: expires is past dated
+        document.cookie = "MY_COOKIE=; path=/; expires=Wed, 21 Oct 2015 07:28:00 GMT";
+      });
+    </script>
+  </body>
+</html>
