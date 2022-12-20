@@ -1,0 +1,1 @@
+# testcafe-cookie-test
